@@ -1,0 +1,168 @@
+{
+  "menu": [
+    {
+      "url": "/admin",
+      "name": "Dashboard",
+      "slug": "dashboard",
+      "icon": "desktop",
+      "tagcustom": "badge badge-light-danger badge-pill badge-round 50"
+    },
+    {
+      "url": "#",
+      "name": "Users",
+      "slug": "users-group",
+      "icon": "users",
+      "submenu":[
+        {
+          "url": "/admin/users",
+          "name": "Users",
+          "slug": "users"
+        },
+        {
+          "url": "admin/admins",
+          "name": "Admins",
+          "slug": "Admins"
+        },
+        {
+          "url": "/admin/users/create",
+          "name": "Add User/Admin",
+          "slug": "users"
+        },
+        {
+          "url": "admin/drivers",
+          "name": "Drivers",
+          "slug": "drivers"
+        },
+        {
+          "url": "admin/helpers",
+          "name": "Helpers",
+          "slug": "helpers"
+        },
+        {
+          "url": "/admin/drivers-create",
+          "name": "Add Driver",
+          "slug": "users"
+        },
+        {
+          "url": "/admin/helpers-create",
+          "name": "Add Helper",
+          "slug": "users"
+        }
+      ]
+    },
+    {
+      "url": "/admin/categories",
+      "name": "Categories",
+      "slug": "categories",
+      "icon": "list",
+      "dropdown": "1"
+    },
+    {
+      "url": "/admin/items",
+      "name": "Items",
+      "slug": "items",
+      "icon": "grid",
+      "dropdown": "1"
+
+
+    },
+
+    {
+      "url": "/admin/orders",
+      "name": "Orders",
+      "slug": "orders",
+      "icon": "box",
+      "dropdown": "1"
+    },
+    {
+      "url": "/admin/end-order",
+      "name": "End Orders",
+      "slug": "orders",
+      "icon": "box",
+      "dropdown": "1"
+    },
+    {
+      "url": "/admin/order-places",
+      "name": "order-places",
+      "slug": "reports",
+      "icon": "file-import",
+      "dropdown": "1"
+    },
+    {
+      "url": "/admin/messages",
+      "name": "messages",
+      "slug": "vendors",
+      "icon": "satellite",
+      "dropdown": "1"
+    },
+    {
+      "url": "/admin/notification",
+      "name": "Notifications",
+      "slug": "notifications",
+      "icon": "paper-plane",
+      "dropdown": "1"
+    },
+    {
+      "url": "/admin/roles",
+      "name": "Roles",
+      "slug": "roles",
+      "icon": "briefcase",
+      "dropdown": "1"
+    },
+    {
+      "url": "/admin/activity",
+      "name": "Activity Log",
+      "slug": "activity",
+      "icon": "info-alt",
+      "dropdown": "1"
+    },
+    {
+      "url": "admin/onboarding",
+      "name": "onboarding",
+      "slug": "reports",
+      "icon": "file-import",
+      "dropdown": "1"
+    },
+
+    {
+      "url": "#",
+      "name": "Settings",
+      "slug": "settings",
+      "icon": "gears",
+      "dropdown": "1",
+
+      "submenu": [
+        {
+          "url": "/admin/banners",
+          "name": "Banners",
+          "slug":"app=settings"
+        },
+        {
+          "url": "/admin/cities",
+          "name": "Cities",
+          "slug":"cities"
+        },
+        {
+          "url": "/admin/areas",
+          "name": "Areas",
+          "slug":"areas"
+        },
+        {
+          "url": "admin/question",
+          "name": "question",
+          "slug":"sliders"
+        },
+        {
+          "url": "admin/providers",
+          "name": "Providers",
+          "slug":"app=settings"
+        },
+        {
+          "url": "admin/points",
+          "name": "Points",
+          "slug":"app=settings"
+        }
+      ]
+    }
+  ]
+}

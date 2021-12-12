@@ -1,0 +1,33 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboard",
+      "slug": "dashboard",
+      "icon": "desktop",
+      "dropdown": "1"
+    },
+    {
+      "url": "/users",
+      "name": "Users",
+      "slug": "users",
+      "icon": "bx bx-user",
+      "dropdown": "1",
+      "role" : "admin"
+    },
+    {
+      "url": "/roles",
+      "name": "Roles",
+      "slug": "roles",
+      "icon": "bx bx-briefcase-alt-2",
+      "dropdown": "1"
+    },
+    {
+      "url": "/activity",
+      "name": "Activity",
+      "slug": "roles",
+      "icon": "bx bx-user",
+      "dropdown": "1"
+    }
+  ]
+}

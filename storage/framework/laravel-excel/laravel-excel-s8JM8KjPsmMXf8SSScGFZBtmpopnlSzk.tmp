@@ -1,0 +1,85 @@
+//////////// upload project github //////////////
+git remote add origin https://github.com/ibrammelad/market-shop.git
+git branch -M main
+git push -u origin main
+/////////////// end upload project //////////////
+
+
+//////////////// install ui //////////////
+install ui
+composer require laravel/ui
+php artisan ui vue --auth
+///////////////  install ui ///////////////
+
+
+install npm
+npm install && npm run dev
+
+passport tutorial
+https://www.positronx.io/laravel-rest-api-with-passport-authentication-tutorial/
+
+
+//////////////// excal ////////////////////
+https://docs.laravel-excel.com/3.1/getting-started/
+//////////////// end excal /////////////////
+
+///////////////////// helper file //////////////
+composer dump-autoload
+///////////////////////////////////////////
+/////////////////  carbon for date /////////////////
+ $currentDateTime = Carbon::now();
+ $newDateTime = Carbon::now()->addDay();
+////////////////////// end carbon ///////////////
+
+
+//////////////////////// middleware permissions //////////////////
+$this->middleware('permission:role-list|role-create|role-edit|role-delete', ['only' => ['index','store']]);
+		$this->middleware('permission:role-create', ['only' => ['create','store']]);
+		$this->middleware('permission:role-edit', ['only' => ['edit','update']]);
+		$this->middleware('permission:role-delete', ['only' => ['destroy']]); 
+//////////////////////// middleware permissions //////////////////
+
+///////////////// to create new permission
+php artisan cache:forget spatie.permission.cache 
+php artisan cache:clear
+////////////////// end permissions ///////////////
+
+
+///////////// multiple upload images ////////
+https://www.cloudways.com/blog/laravel-multiple-files-images-upload/
+////////////// end images//////////////// 
+
+
+///////////// sanctum tutorial /////////////////
+https://www.itsolutionstuff.com/post/laravel-sanctum-spa-api-authentication-exampleexample.html
+///////////// end sanctum //////////////
+
+
+////////////////multi gaurds ////////////
+https://www.codermen.com/blog/160/how-to-make-multi-auth-in-laravel-7
+////////////// end /////////////////////
+
+
+////////////////// bulma ////////////////
+https://github.com/vikdiesel/laravel-bulma-auth-preset
+//////////////////////end bulma/////////////
+
+
+//////////// login with facebook ////////
+https://www.itsolutionstuff.com/post/laravel-56-login-with-facebook-with-socialiteexample.html
+/////////////////////// end ///////////////////////////
+
+
+
+////////////////// functions for api  exceptions///////////////////
+https://github.com/JuanDMeGon/RESTful-API-with-Laravel-Definitive-Guide/blob/master/app/Exceptions/Handler.php
+////////////////////////// en d ///////////////////////////////
+
+
+
+////////////////////////////////////// change password ////////////////
+https://hdtuto.com/article/laravel-change-password-old-password-validation-example
+        return Hash::check($value, auth()->user()->password);
+///////////////////////////////////////////////////
+
+https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/documentation/documentation-laravel-menu.html

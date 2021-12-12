@@ -1,0 +1,353 @@
+body {
+  text-align: right;
+  background-color: #f5f5f5; }
+
+[dir="ltr"] body {
+  text-align: left; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.hidden {
+  display: none; }
+
+.btn {
+  outline: 0 !important;
+  box-shadow: none !important;
+  min-width: 120px; }
+
+.btn-primary {
+  background-color: #0c74bc;
+  border-color: #0c74bc;
+  color: #fff !important; }
+
+.btn-primary:hover {
+  background-color: rgba(12, 116, 188, 0.7);
+  border-color: rgba(12, 116, 188, 0.7); }
+
+.btn-secondary {
+  background-color: #f9c911;
+  border-color: #f9c911; }
+
+.btn-secondary:hover {
+  background-color: #c19c0d;
+  border-color: #c19c0d; }
+
+.control-container {
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 2px solid #ddd;
+  transition: all 0.2s ease-in; }
+  .control-container.focused {
+    border-color: #0c74bc; }
+    .control-container.focused label {
+      color: #0c74bc;
+      opacity: 1; }
+  .control-container label {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.8;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s ease-in; }
+  .control-container .form-control {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-shadow: none; }
+
+.radio {
+  position: relative;
+  cursor: pointer;
+  line-height: 20px;
+  font-size: 14px;
+  margin-bottom: 24px; }
+
+.radio .label {
+  position: relative;
+  display: block;
+  float: right;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #c8ccd4;
+  border-radius: 100%;
+  -webkit-tap-highlight-color: transparent; }
+
+.radio .label:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #225cff;
+  transform: scale(0);
+  transition: all 0.2s ease;
+  opacity: 0.08;
+  pointer-events: none; }
+
+.radio:hover .label:after {
+  transform: scale(3.6); }
+
+input[type="radio"]:checked + .label {
+  border-color: #225cff; }
+
+input[type="radio"]:checked + .label:after {
+  transform: scale(1);
+  transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9);
+  opacity: 1; }
+
+[dir="ltr"] .radio .label {
+  float: left;
+  margin-right: 10px; }
+
+/*Select2*/
+.control-container .select2-container {
+  display: block;
+  width: 100% !important;
+  border: 0;
+  line-height: 38px;
+  min-height: 38px; }
+
+.select2-container--default .select2-selection--single {
+  border: 0; }
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  padding: 0;
+  line-height: 36px; }
+
+.disabled {
+  opacity: 0.7;
+  pointer-events: none; }
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight,
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  background-color: #0c74bc !important;
+  border-color: #0c74bc !important; }
+
+table:not(.ui-datepicker-calendar) {
+  border-collapse: collapse;
+  background-color: white;
+  text-align: left;
+  width: 100%;
+  text-align: right; }
+  table:not(.ui-datepicker-calendar) thead th,
+  table:not(.ui-datepicker-calendar) tr th {
+    background-color: #d0def2;
+    color: #0c74bc;
+    text-transform: uppercase;
+    min-width: 100px; }
+  table:not(.ui-datepicker-calendar) thead .th-actions,
+  table:not(.ui-datepicker-calendar) tr .th-actions {
+    max-width: 170px;
+    width: 170px; }
+  table:not(.ui-datepicker-calendar) tbody tr td {
+    border: 0 !important; }
+    table:not(.ui-datepicker-calendar) tbody tr td .btn-link {
+      text-decoration: underline;
+      color: #0c74bc;
+      max-width: 100px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 0;
+      min-width: auto; }
+    table:not(.ui-datepicker-calendar) tbody tr td .wrap {
+      max-width: none;
+      text-overflow: unset;
+      white-space: unset; }
+  table:not(.ui-datepicker-calendar).table-striped tbody tr:nth-child(even) {
+    background-color: #f3f8fe; }
+  table:not(.ui-datepicker-calendar).table-striped tbody tr:nth-child(odd) {
+    background-color: #fff; }
+  table:not(.ui-datepicker-calendar) .td-actions-group .actions {
+    display: flex;
+    align-items: center; }
+    table:not(.ui-datepicker-calendar) .td-actions-group .actions a {
+      margin: 0 4px;
+      color: #0c74bc;
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      table:not(.ui-datepicker-calendar) .td-actions-group .actions a:first-child {
+        margin-left: 0; }
+      table:not(.ui-datepicker-calendar) .td-actions-group .actions a::before {
+        content: "";
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        margin: auto;
+        background-color: rgba(12, 116, 188, 0.1);
+        border-radius: 50%;
+        transition: all 0.2s ease-in;
+        transform: scale(0); }
+      table:not(.ui-datepicker-calendar) .td-actions-group .actions a.text-danger::before {
+        background-color: rgba(220, 53, 69, 0.1); }
+      table:not(.ui-datepicker-calendar) .td-actions-group .actions a:hover::before {
+        transform: scale(1); }
+
+[dir="ltr"] table:not(.ui-datepicker-calendar) {
+  text-align: left; }
+
+fieldset legend {
+  border-left: 4px solid #0c74bc;
+  padding: 0 8px;
+  width: auto; }
+  fieldset legend h5 {
+    margin: 0; }
+fieldset .fieldset-body {
+  padding: 16px 0; }
+
+.nav-tabs .nav-link {
+  padding: 16px 24px;
+  border: 0;
+  color: #777;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-in; }
+  .nav-tabs .nav-link.active {
+    font-weight: 600;
+    color: #0c74bc;
+    border-bottom: 2px solid #0c74bc; }
+
+.tab-content .tab-pane {
+  padding: 24px 0; }
+
+.user-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px; }
+  .user-info .user-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden; }
+    .user-info .user-img img {
+      width: 100%;
+      height: 100%; }
+  .user-info .info {
+    margin: 0 16px; }
+    .user-info .info h5 {
+      color: #0c74bc;
+      margin-bottom: 4px; }
+    .user-info .info p {
+      opacity: 0.7;
+      margin: 0; }
+
+.amount-info {
+  padding: 16px;
+  border-radius: 10px;
+  background: #0c74bc;
+  background-image: url(../images/pattern.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right; }
+  .amount-info h5,
+  .amount-info p {
+    margin: 0;
+    color: #fff; }
+  .amount-info h5 {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 6px; }
+
+.page-content {
+  background-color: #fff;
+  margin: 24px;
+  padding: 24px; }
+
+.page-title {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%; }
+  .page-title h4 {
+    border-bottom: 4px solid #0c74bc;
+    padding-bottom: 12px;
+    width: auto;
+    display: inline-block; }
+
+.data-view label {
+  font-weight: 600;
+  opacity: .4;
+  color: #000;
+  display: block; }
+.data-view .data {
+  font-weight: 600;
+  color: #000; }
+
+.page-list {
+  margin-bottom: 16px;
+  display: block;
+  width: 100%; }
+
+.action-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px; }
+  .action-row .btn {
+    margin-right: 8px; }
+
+@media (max-width: 768px) {
+  .table thead {
+    display: none; }
+
+  .table tr {
+    display: table;
+    width: 100%;
+    border-top: 1px solid #ccc; }
+
+  .table tbody td {
+    display: flex;
+    width: 100%; }
+
+  .table td:before {
+    content: attr(data-th);
+    font-weight: 600;
+    opacity: 0.7;
+    text-transform: uppercase;
+    width: 150px;
+    padding: 0 8px; }
+
+  .table tr td .td-data {
+    padding: 0 8px;
+    color: #000; }
+
+  .table tbody tr:last-child {
+    border-bottom: 1px solid #ccc; }
+
+  .table .td-actions-group .actions {
+    padding: 0 8px; } }
+/*LTR Style*/
+[dir="ltr"] .mr-auto {
+  margin-left: auto;
+  margin-right: 0 !important; }
+
+/*# sourceMappingURL=style.css.map */
